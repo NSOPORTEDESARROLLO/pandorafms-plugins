@@ -31,3 +31,10 @@ Estos plugins estan hechos para los servidores de Nsoporte asi como las localiza
 - Se debe revisar el archivo /etc/pandora/pandora_agent.conf
 - Activar o Desactivar los archivos en el directorio "/etc/pandora/nsoporte" los archivos activos se deben activar cambiado la extension a .conf, los desactivados pueden ser .conf.no
 - /etc/init.d/pandora_agent_daemon restart
+
+# Plugins 
+
+- calls_by_trunk.pl: Especifica cuantas llamadas hay en una troncal, utiliza asterisk manager y se deben pasar parametros: port, host, user, pwd y trunk 
+- icmp.pl: Permite saber la latencia entre un host, --host  Host para realizar la prueba ping, -count Cuantas pruebas se realizan, por defecto son 3, --timeout Segundos para esperar un timeout, por defecto 1s
+
+
