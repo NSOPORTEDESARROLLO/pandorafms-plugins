@@ -1,0 +1,8 @@
+# Servicio Samba 4 como AD
+module_begin
+module_name Samba4_Status
+module_type generic_proc
+module_exec ps aux | grep samba | grep -v grep | wc -l
+module_description Proceso principal de Samba4 para actual como AD
+module_group Application
+module_end

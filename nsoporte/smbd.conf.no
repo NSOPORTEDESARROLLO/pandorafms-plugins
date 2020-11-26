@@ -1,0 +1,9 @@
+
+# Servicio Smbd comparticion de archivos
+module_begin
+module_name Smbd_Status
+module_type generic_proc
+module_exec ps aux | grep smbd | grep -v grep | wc -l
+module_description Servicio de compaticion de archivos en red mediante smb
+module_group Application
+module_end
