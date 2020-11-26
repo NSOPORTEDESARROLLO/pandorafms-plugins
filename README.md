@@ -1,10 +1,10 @@
-## Descripcion 
+# Descripcion 
 
 Estos plugins estan hechos para los servidores de Nsoporte asi como las localizaciones de archivos, puede que no funcione en otras diestros
 
-## Instalacion 
+# Instalacion 
 
-# Centos 7
+## Centos 7
 
 - wget "https://sourceforge.net/projects/pandora/files/Pandora%20FMS%207.0NG/743/RHEL_CentOS/pandorafms_agent_unix-7.0NG.743-1.noarch.rpm/download" -O /usr/src/pandorafms_agent_unix-7.0NG.743-1.noarch.rpm
 -  yum install perl-YAML-Tiny git
@@ -15,7 +15,7 @@ Estos plugins estan hechos para los servidores de Nsoporte asi como las localiza
 
 
 
-## Configuracion 
+# Configuracion 
 
 - Se debe revisar el archivo /etc/pandora/pandora_agent.conf
 - Activar o Desactivar los archivos en el directorio "/etc/pandora/nsoporte" los archivos activos se deben activar cambiado la extension a .conf, los desactivados pueden ser .conf.no
