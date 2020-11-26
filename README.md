@@ -12,6 +12,7 @@ Estos plugins estan hechos para los servidores de Nsoporte asi como las localiza
 - git clone https://github.com/NSOPORTEDESARROLLO/pandorafms-plugins /usr/src/pandora
 - mv /etc/pandora /etc/pandora.new
 - mv /usr/src/pandora /etc
+- chmod +x /etc/pandora/plugins/*
 
 ## Debian 9
 
@@ -23,6 +24,7 @@ Estos plugins estan hechos para los servidores de Nsoporte asi como las localiza
 - git clone https://github.com/NSOPORTEDESARROLLO/pandorafms-plugins /usr/src/pandora
 - mv /etc/pandora /etc/pandora.new
 - mv /usr/src/pandora /etc
+- chmod +x /etc/pandora/plugins/*
 
 # Configuracion 
 
