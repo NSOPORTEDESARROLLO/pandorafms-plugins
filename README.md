@@ -13,7 +13,16 @@ Estos plugins estan hechos para los servidores de Nsoporte asi como las localiza
 - mv /etc/pandora /etc/pandora.new
 - mv /usr/src/pandora /etc
 
+## Debian 9
 
+- wget "https://sourceforge.net/projects/pandora/files/Pandora%20FMS%207.0NG/743/Debian_Ubuntu/pandorafms.agent_unix_7.0NG.743.deb/download" -O /usr/src/pandorafms.agent_unix_7.0NG.743.deb
+- apt-get update
+- apt-get install -y unzip zip git libyaml-tiny-perl
+- dpkg -i /usr/src/pandorafms.agent_unix_7.0NG.743.deb
+- systemctl enable pandora_agent_daemon
+- git clone https://github.com/NSOPORTEDESARROLLO/pandorafms-plugins /usr/src/pandora
+- mv /etc/pandora /etc/pandora.new
+- mv /usr/src/pandora /etc
 
 # Configuracion 
 
