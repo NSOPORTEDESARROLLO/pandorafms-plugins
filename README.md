@@ -14,7 +14,7 @@ Estos plugins estan hechos para los servidores de Nsoporte asi como las localiza
 - mv /usr/src/pandora /etc
 - chmod +x /etc/pandora/plugins/*
 
-## Debian 9
+## Debian 9/10
 
 - wget "https://sourceforge.net/projects/pandora/files/Pandora%20FMS%207.0NG/743/Debian_Ubuntu/pandorafms.agent_unix_7.0NG.743.deb/download" -O /usr/src/pandorafms.agent_unix_7.0NG.743.deb
 - apt-get update

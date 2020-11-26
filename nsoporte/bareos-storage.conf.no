@@ -1,0 +1,8 @@
+# Proceso de Bareos Storage
+module_begin
+module_name Bareos-sd_Status
+module_type generic_proc
+module_exec ps aux | grep bareos-sd | grep -v grep | wc -l
+module_description Servicio de Storage para Bareos
+module_group Application
+module_end

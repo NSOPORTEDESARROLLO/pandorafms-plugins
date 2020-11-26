@@ -1,0 +1,9 @@
+
+# Proceso de Bareos Client
+module_begin
+module_name Bareos-fd_Status
+module_type generic_proc
+module_exec ps aux | grep bareos-fd | grep -v grep | wc -l
+module_description Cliente de Bareos para enviar backups al servidor
+module_group Application
+module_end

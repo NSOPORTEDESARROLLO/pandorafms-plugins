@@ -1,0 +1,9 @@
+
+# Proceso de Bareos Director
+module_begin
+module_name Bareos-dir_Status
+module_type generic_proc
+module_exec ps aux | grep bareos-dir | grep -v grep | wc -l
+module_description Director de Backups basado en Bareos                       
+module_group Application
+module_end
