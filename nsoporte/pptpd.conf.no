@@ -1,0 +1,8 @@
+# PPTPD Server
+module_begin
+module_name PPTPD VPN
+module_type generic_data
+module_exec ps aux | grep "pppd" | grep -v grep | wc -l
+module_description Servidor PPTPD para conexiones VPN remotas
+module_group Networking
+module_end

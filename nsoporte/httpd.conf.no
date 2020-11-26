@@ -1,0 +1,8 @@
+# Procesos de HTTPD
+module_begin
+module_name HTTPD_Status
+module_type generic_proc
+module_exec ps aux | grep httpd | grep -v grep | wc -l
+module_description Servicio para Interfaces graficas Web
+module_group Application
+module_end

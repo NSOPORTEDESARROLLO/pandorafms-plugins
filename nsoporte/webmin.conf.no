@@ -1,0 +1,8 @@
+# Webmin 
+module_begin
+module_name Webmin_Status
+module_type generic_data
+module_exec ps aux | grep "miniserv.pl" | grep -v grep | wc -l
+module_description Interface Web para configurar el servidor
+module_group Application
+module_end

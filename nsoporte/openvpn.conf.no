@@ -1,0 +1,8 @@
+# OpenVPN Server
+module_begin
+module_name OpenVPN
+module_type generic_data
+module_exec ps aux | grep "openvpn" | grep -v grep | wc -l
+module_description Servidor OpenVPN para conexiones VPN remotas
+module_group Networking
+module_end

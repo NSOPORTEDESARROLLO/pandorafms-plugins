@@ -1,0 +1,7 @@
+module_begin
+module_name Call Center Engine
+module_type generic_proc
+module_exec ps aux | grep -v grep | grep dialerd | wc -l
+module_group Application
+module_description Porceso de llamadas entrantes y salientes en le modulo de Callcenter
+module_end
