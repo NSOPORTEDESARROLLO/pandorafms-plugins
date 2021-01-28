@@ -30,6 +30,26 @@ Estos plugins estan hechos para los servidores de Nsoporte asi como las localiza
 
 - Se debe revisar el archivo /etc/pandora/pandora_agent.conf
 - Activar o Desactivar los archivos en el directorio "/etc/pandora/nsoporte" los archivos activos se deben activar cambiado la extension a .conf, los desactivados pueden ser .conf.no
+
+# Reparar el Plugin de CPU LOAD WINDOWS 
+
+# Cpu Load
+'
+module_begin
+module_name  CPU Load
+module_type generic_data 
+module_exec wmic cpu get loadpercentage |grep -v Load
+module_description  User CPU Usage (%)
+module_min_warning 70
+module_max_warning 90
+module_min_critical 91
+module_max_critical 100
+module_unit %
+module_group System
+module_end
+'
+
+
 - /etc/init.d/pandora_agent_daemon restart
 
 # Plugins 
