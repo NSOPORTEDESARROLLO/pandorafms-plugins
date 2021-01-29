@@ -6,9 +6,10 @@ Estos plugins estan hechos para los servidores de Nsoporte asi como las localiza
 
 ## Centos 7
 
-- wget "https://sourceforge.net/projects/pandora/files/Pandora%20FMS%207.0NG/743/RHEL_CentOS/pandorafms_agent_unix-7.0NG.743-1.noarch.rpm/download" -O /usr/src/pandorafms_agent_unix-7.0NG.743-1.noarch.rpm
+- wget "https://sourceforge.net/projects/pandora/files/Pandora%20FMS%207.0NG/751/RHEL_CentOS/pandorafms_agent_unix-7.0NG.751.noarch.rpm/download" -O /usr/src/pandorafms_agent_unix-7.0NG.751.noarch.rpm
 -  yum install perl-YAML-Tiny git
-- rpm -i /usr/src/pandorafms_agent_unix-7.0NG.743-1.noarch.rpm 
+- rpm -i /usr/src/pandorafms_agent_unix-7.0NG.751.noarch.rpm 
+- systemctl enable pandora_agent_daemon
 - git clone https://github.com/NSOPORTEDESARROLLO/pandorafms-plugins /usr/src/pandora
 - mv /etc/pandora /etc/pandora.new
 - mv /usr/src/pandora /etc
@@ -16,10 +17,10 @@ Estos plugins estan hechos para los servidores de Nsoporte asi como las localiza
 
 ## Debian 9/10
 
-- wget "https://sourceforge.net/projects/pandora/files/Pandora%20FMS%207.0NG/743/Debian_Ubuntu/pandorafms.agent_unix_7.0NG.743.deb/download" -O /usr/src/pandorafms.agent_unix_7.0NG.743.deb
+- wget "https://sourceforge.net/projects/pandora/files/Pandora%20FMS%207.0NG/751/Debian_Ubuntu/pandorafms.agent_unix_7.0NG.751.deb/download" -O /usr/src/pandorafms.agent_unix_7.0NG.751.deb
 - apt-get update
 - apt-get install -y unzip zip git libyaml-tiny-perl
-- dpkg -i /usr/src/pandorafms.agent_unix_7.0NG.743.deb
+- dpkg -i /usr/src/pandorafms.agent_unix_7.0NG.751.deb
 - systemctl enable pandora_agent_daemon
 - git clone https://github.com/NSOPORTEDESARROLLO/pandorafms-plugins /usr/src/pandora
 - mv /etc/pandora /etc/pandora.new
@@ -30,11 +31,20 @@ Estos plugins estan hechos para los servidores de Nsoporte asi como las localiza
 
 - Se debe revisar el archivo /etc/pandora/pandora_agent.conf
 - Activar o Desactivar los archivos en el directorio "/etc/pandora/nsoporte" los archivos activos se deben activar cambiado la extension a .conf, los desactivados pueden ser .conf.no
+- /etc/init.d/pandora_agent_daemon restart
+
+
+## Windows 
+
+- Descargar: https://sourceforge.net/projects/pandora/files/Pandora%20FMS%207.0NG/751/Windows/Pandora%20FMS%20Windows%20Agent%20v7.0NG.751_x86_64.exe/download
+
 
 # Reparar el Plugin de CPU LOAD WINDOWS 
 
+```
 # Cpu Load
-'
+
+#CPU LOAD
 module_begin
 module_name  CPU Load
 module_type generic_data 
@@ -47,10 +57,11 @@ module_max_critical 100
 module_unit %
 module_group System
 module_end
-'
+
+```
 
 
-- /etc/init.d/pandora_agent_daemon restart
+
 
 # Plugins 
 
