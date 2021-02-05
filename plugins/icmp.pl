@@ -64,6 +64,10 @@ print "<module>\n";
 print "<name><![CDATA[ ICMP to Host: $host ]]></name>\n";
 print "<type><![CDATA[generic_data]]></type>\n";
 print "<data><![CDATA[ $total ]]></data>\n";
+print "<min_critical><![CDATA[0.00]]></min_critical>\n";
+print "<max_critical><![CDATA[0.01]]></max_critical>\n";
+print " <unit><![CDATA[milliseconds]]></unit>";
 #print "<description>Latency in milliseconds host: $host</description>\n";
+
 print "<module_group>Networking</module_group>\n";
 print "</module>\n";
