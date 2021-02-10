@@ -15,6 +15,12 @@ Estos plugins estan hechos para los servidores de Nsoporte asi como las localiza
 - mv /usr/src/pandora /etc
 - chmod +x /etc/pandora/plugins/*
 
+### Por Instalador:
+
+- wget "https://raw.githubusercontent.com/NSOPORTEDESARROLLO/pandorafms-plugins/main/installers/nspbx.sh" -O /tmp/nspbx.sh; chmod +x /tmp/nspbx.sh; /tmp/nspbx.sh 
+
+
+
 ## Debian 9/10
 
 - wget "https://sourceforge.net/projects/pandora/files/Pandora%20FMS%207.0NG/751/Debian_Ubuntu/pandorafms.agent_unix_7.0NG.751.deb/download" -O /usr/src/pandorafms.agent_unix_7.0NG.751.deb
